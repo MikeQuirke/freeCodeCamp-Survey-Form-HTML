@@ -1,0 +1,125 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"
+ />
+ <link rel="stylesheet" href="styles.css">
+ <title>freeCodeCamp Survey Form</title>
+    </head>
+
+    <main>
+    <body>
+<div class="container">
+<header class="header">
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+</header>
+
+<form id="survey-form">
+  <div class="form-group">
+<label id="name-label" for="name">Name:</label>
+<input type="text" id="name" placeholder="Please enter your name: "  required />
+</div>
+<div class="form-group">
+<label id="email-label" for="email">Email:</label>
+<input type="email" id="email" placeholder="Please enter your email: "  required />
+</div>
+<div class="form-group">
+<label id="number-label" for="number">Age:</label>
+<input type="number" id="number" min="10" max="99" placeholder="eg. 57 "  required />
+</div>
+
+<div class="form-group">
+  <p></p>Which best describes your current role? 
+<select id="dropdown" name="role" required>
+  <option value="disbaled">Select your current role</option>
+  <option value="student">Student</option>
+  <option value="full-time-job">Full Time Job</option>
+  <option value="full-time-learner">Full Time Learner</option>
+  <option value="rather-not-say">Rather not say</option>
+  <option value="other">Other</option>
+</select>
+  </div>
+
+  <div class="form-group">
+    <p>Would you recommend freeCodeCamp to a friend? </p>
+    <label>
+    <input type="radio" name="user-recommend" value="yes" checked /> Yes
+    </label>
+
+<label>
+    <input type="radio" name="user-recommend" value="no" checked /> No
+    </label>
+
+    <label>
+    <input type="radio" name="user-recommend" value="maybe" checked /> Maybe
+    </label>
+
+   <div class="form-group">
+  <p></p>What is your favorite feature of freeCodeCamp? 
+<select id="dropdown" name="favorite-feature" required>
+  <option value="disbaled">Select an option</option>
+  <option value="challenges">Challenges</option>
+  <option value="projects">Projects</option>
+  <option value="community">Community</option>
+  <option value="open-source">Open Source</option>
+</select>
+  </div> 
+
+  <div class="form-group">
+    <p>What would you like to see improved? <span class="clue">  (Check all that apply)</span></p>
+<label>
+<input type="checkbox" name="prefer" value="front-end-projects">Front End Projects</label>
+<input type="checkbox" name="prefer" value="back-end-projects">Back End Projects</label>
+<input type="checkbox" name="prefer" value="data-visualization">Data Visualization</label>
+<input type="checkbox" name="prefer" value="challenges">Challenges</label>
+<input type="checkbox" name="prefer" value="open-source-community">Open Source Community</label>
+    </div>
+
+    <div>
+      <p>Any comments or suggestions? </p>
+      <label>
+        <textarea id="comments" name="comment" placeholder="Enter your comment here"></textarea>
+        </label>
+      </div>
+
+<div class="form-group">
+<button type="submit" id="submit" class="submit-button">Submit</button>
+  </div>
+  </form>
+
+
+
+</div>
+</body>
+</main>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+.header {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#description {
+  font-style: italic;
+}
+
+* {
+  text-align: center;
+  padding: 4px;
+  border-style: solid 1px black;
+}
+
+* {
+  background-color: light-grey;
+}
+
+** end of undefined **
+
